@@ -1,0 +1,22 @@
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 900px 1fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "main main"
+    "about archive";
+    margin: 10px 10px;
+}
+
+#main {
+    grid-area: main;
+}
+
+#about {
+    grid-area: about;
+}
+
+#archive {
+    grid-area: archive;
+}

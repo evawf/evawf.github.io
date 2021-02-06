@@ -1,0 +1,5 @@
+@import "common.css";
+
+#about {
+    grid-area: about;
+}
