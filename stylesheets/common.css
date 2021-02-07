@@ -34,27 +34,6 @@ body {
     color: rgb(233, 136, 10);
 }
 
-.content {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1.2fr 0.8fr 200px;
-    grid-gap: 10px;
-    grid-template-areas: 
-    "main"
-    "about"
-    "archive";
-    margin: 10px 10px;
-}
-
-#main {
-    grid-area: main;
-}
-
-
-
-#archive {
-    grid-area: archive;
-}
 
 .card {
     display: flex;
@@ -88,9 +67,14 @@ body {
     margin: 0 0 10 0px;
 }
 
-#portrait {
-    height: 250px;
+.card .avatar {
+    vertical-align: middle;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
 }
+
+
 .footer {
     display: flex;
     flex-direction: row;
@@ -112,38 +96,3 @@ body {
     color: rgb(233, 136, 10);
 }
 
-
-@media(min-width: 425px) { 
-    .content {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1.2fr 0.5fr 200px;
-    }
-    .card {
-        margin: 0 60px;
-    }
-}
-/* 
-@media(min-width: 900px) {
-    .navbar {
-        height: 150px;
-    }
-    .content {
-        grid-template-columns: 1fr 1500px;
-        grid-template-rows: 975px 1fr;
-        grid-template-areas: 
-        "main about"
-        "main archive";
-    }
-
-    .card {
-        margin: 0 40px;
-    }
-
-    .mainbox {
-        margin-left: 500px;
-    }
-
-    .sidebar {
-        margin-right: 500px
-    }
-}  */
