@@ -34,18 +34,18 @@
     .content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.6fr 0.2fr 0.4fr;
+        grid-template-rows: 1fr 150px 200px;
         grid-template-areas: 
-        "main main about "
+        "main main about"
         "main main archive"
         "main main archive";
 
-        margin: 20px 80px 20px 80px;
+        margin: 20px 80px 0 80px;
     }
 
     .mainbox .card {
         margin-right: 10px;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
 
     .sidebar .card {
