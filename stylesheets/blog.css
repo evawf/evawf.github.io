@@ -1,20 +1,72 @@
 @import "common.css";
 
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 0.2fr 0.2fr ;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "main"
+    "blog1"
+    "blog2"
+    "blog3";
+    margin: 10px 10px;
+}
+
 #main {
     grid-area: main;
 }
 
 #blog1 {
-    grid-area: archive;
+    grid-area: blog1;
 }
 
 #blog2 {
-    grid-area: about;
+    grid-area: blog2;
+}
+
+#blog3 {
+    grid-area: blog3;
+}
+
+.blogfig2 {
+    width: 100%;
+    margin-left: 0
+}
+
+.author-info {
+    margin: 0 40px;
+}
+
+.socialSharing a {
+    margin: 0 20px;
 }
 
 @media(min-width: 768px) { 
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.8fr 0.2fr;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "main main main"
+        "blog1 blog2 blog3";
+        margin: 10px 10px;
+    }
     .card {
-        margin: 0 30px;
+        margin: 0 20px;
+    }
+
+    #blog1 .card {
+        margin-right: 0;
+    }
+
+    #blog2 .card {
+        margin: 0 10px;
+    }
+
+    #blog3 .card {
+        margin-left: 0;
     }
 } 
 
@@ -22,11 +74,27 @@
     .content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 680px 500px;
+        grid-template-rows: 0.2fr 0.2fr 0.2fr 0.5fr;
         grid-template-areas: 
-        "main main about "
-        "main main archive";
+        "main main blog1 "
+        "main main blog2"
+        "main main blog3"
+        "main main blgo3";
         margin: 20px 80px 0 80px;
     }
 
-} 
+    .mainbox .card {
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+
+    #blog1 .card {
+        margin: 0 10px;
+    }
+
+    #blog3 .card {
+        margin: 0 10px;
+
+    }
+
+}
