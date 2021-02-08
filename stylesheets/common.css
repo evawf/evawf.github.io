@@ -34,6 +34,17 @@ body {
     color: rgb(233, 136, 10);
 }
 
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 0.5fr 135px;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "main"
+    "about"
+    "archive";
+    margin: 10px 10px;
+}
 
 .card {
     display: flex;
@@ -60,7 +71,7 @@ body {
 }
 
 .blogtext {
-    margin: 5px 10px;
+    margin: 0 40px;
 }
 
 .btn-info {
@@ -73,7 +84,6 @@ body {
     width: 50px;
     border-radius: 50%;
 }
-
 
 .footer {
     display: flex;

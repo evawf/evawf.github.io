@@ -1,1 +1,32 @@
 @import "common.css";
+
+#main {
+    grid-area: main;
+}
+
+#blog1 {
+    grid-area: archive;
+}
+
+#blog2 {
+    grid-area: about;
+}
+
+@media(min-width: 768px) { 
+    .card {
+        margin: 0 30px;
+    }
+} 
+
+@media(min-width: 1024px) {
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 680px 500px;
+        grid-template-areas: 
+        "main main about "
+        "main main archive";
+        margin: 20px 80px 0 80px;
+    }
+
+} 

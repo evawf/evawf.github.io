@@ -1,17 +1,5 @@
 @import "common.css";
 
-.content {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.8fr 0.5fr 135px;
-    grid-gap: 10px;
-    grid-template-areas: 
-    "main"
-    "about"
-    "archive";
-    margin: 10px 10px;
-}
-
 #main {
     grid-area: main;
 }
@@ -24,12 +12,30 @@
     grid-area: about;
 }
 
-@media(min-width: 425px) { 
+@media(min-width: 768px) { 
     .card {
-        margin: 0 20px;
+        margin: 0 50px;
     }
 } 
 
-@media(min-width: 768px) {
+@media(min-width: 1000px) {
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 650px 1fr;
+        grid-template-areas: 
+        "main main about "
+        "main main archive";
+        margin: 20px 80px 0 80px;
+    }
 
+    .mainbox .card {
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+
+    .sidebar .card {
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
 } 
