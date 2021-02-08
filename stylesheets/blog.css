@@ -74,7 +74,7 @@
     .content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.2fr 0.2fr 0.2fr 0.5fr;
+        grid-template-rows: 0.2fr 0.2fr 0.2fr 0.55fr;
         grid-template-areas: 
         "main main blog1 "
         "main main blog2"
