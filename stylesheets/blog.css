@@ -10,7 +10,7 @@
     "blog1"
     "blog2"
     "blog3";
-    margin: 10px 10px;
+    margin: 15px 15px;
 }
 
 #main {
@@ -38,11 +38,15 @@
     margin: 0 40px;
 }
 
+.author {
+    font-family: "Dancing Script", cursive;
+}
+
 .socialSharing a {
     margin: 0 20px;
 }
 
-@media(min-width: 768px) { 
+@media (min-width: 768px) { 
     .content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -51,26 +55,29 @@
         grid-template-areas: 
         "main main main"
         "blog1 blog2 blog3";
-        margin: 10px 10px;
+        margin: 15px 15px;
     }
     .card {
-        margin: 0 20px;
+        margin: 20px 30px;
     }
 
     #blog1 .card {
+        margin-top: 0;
         margin-right: 0;
     }
 
     #blog2 .card {
-        margin: 0 10px;
+        margin-top: 0;
+        margin: 0 15.5px;
     }
 
     #blog3 .card {
+        margin-top: 0;
         margin-left: 0;
     }
 } 
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
     .content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -80,21 +87,30 @@
         "main main blog2"
         "main main blog3"
         "main main blgo3";
-        margin: 20px 80px 40px 80px;
+        margin: 0 80px 45px 80px;
     }
 
     .mainbox .card {
+        margin-top: 30px;
         margin-right: 10px;
-        margin-bottom: 20px;
     }
 
     #blog1 .card {
-        margin: 0 10px;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 30px;
+    }
+
+    #blog2 .card {
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 30px;
     }
 
     #blog3 .card {
-        margin: 0 10px;
+        margin-top: 25px;
+        margin-left: 10px;
+        margin-right: 30px;
 
     }
-
 }
