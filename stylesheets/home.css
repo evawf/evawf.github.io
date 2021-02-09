@@ -52,8 +52,12 @@
     }
 
     .sidebar .card {
-        margin-top: 30px;
+        margin-top: 10px;
         margin-left: 10px;
-        padding-bottom: 20px;
     }
+
+    #about {
+        margin-top: 20px;
+    }
+
 } 
