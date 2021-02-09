@@ -46,6 +46,10 @@
     margin: 0 20px;
 }
 
+.sidebar img {
+    width: 80%;
+}
+
 @media (min-width: 768px) { 
     .content {
         display: grid;
@@ -81,7 +85,7 @@
     .content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.2fr 0.2fr 0.2fr 0.5fr;
+        grid-template-rows: 0.2fr 0.2fr 0.2fr 550px;
         grid-template-areas: 
         "main main blog1 "
         "main main blog2"
