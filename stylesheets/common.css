@@ -67,8 +67,7 @@ body {
 }
 
 .btn-info {
-    background-color: rgb(236, 234, 234);
-    border: none;
+    border: solid 1px rgb(233, 136, 10);
     border-radius: 20px;
     padding:10px 20px;
     text-align: center;
