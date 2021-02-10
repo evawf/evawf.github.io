@@ -101,4 +101,8 @@
         justify-content: flex-start;
         align-items: center;
     }
+
+    #blog2, #blog3 {
+        margin-top: 20px; 
+    }
 }
