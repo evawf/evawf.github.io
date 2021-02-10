@@ -55,6 +55,14 @@ body {
     font-family: "Dancing Script", cursive;
 }
 
+.title h3 {
+    margin: 10px 0;
+}
+
+.title h5 {
+    margin: 0;
+}
+
 .card img {
     object-fit: cover;
     width: 100%;
@@ -79,13 +87,6 @@ body {
 .btn-info a {
     color: rgb(233, 136, 10);
     text-decoration: none;
-}
-
-.card .avatar {
-    vertical-align: middle;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
 }
 
 .footer {
