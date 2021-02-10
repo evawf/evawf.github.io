@@ -3,12 +3,11 @@
 .content {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.8fr 0.5fr 150px;
-    grid-gap: 10px;
+    grid-auto-rows: auto;
+    grid-gap: 15px;
     grid-template-areas: 
     "main"
-    "about"
-    "archive";
+    "sidebar";
     margin: 15px 15px;
 }
 
@@ -16,47 +15,32 @@
     grid-area: main;
 }
 
+#sidebar {
+    grid-area: sidebar;
+}
+
 #archive {
-    grid-area: archive;
+    margin-top: 15px;
 }
 
-#about {
-    grid-area: about;
-}
-
-@media (min-width: 768px) { 
-    .card {
-        margin: 10px 30px;
+@media (min-width: 768px) {
+    .content {
+        grid-gap: 40px;
+        margin: 40px 40px;
     }
 
-    .mainbox {
-        margin-top: 10px;
+    #archive {
+        margin-top: 40px;
     } 
 }
 
 @media (min-width: 1024px) {
     .content {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 150px 200px;
-        grid-template-areas: 
-        "main main about"
-        "main main archive"
-        "main main archive";
-        margin: 0 80px 0 80px;
-    }
-
-    .mainbox .card {
-        margin-top: 20px;
-        margin-right: 10px;
-    }
-
-    .sidebar .card {
-        margin-top: 10px;
-        margin-left: 10px;
-    }
-
-    #about {
-        margin-top: 20px;
+        grid-template-columns: 2fr 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas:
+        "main sidebar";
+        margin: 40px 150px 40px 150px;
     }
 } 
