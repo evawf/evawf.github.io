@@ -1,3 +1,3 @@
 Personal Blog Website
 
-https://evawf.github.io/home.html
+https://evawf.github.io/personal-blog/home.html
